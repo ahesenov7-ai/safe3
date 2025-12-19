@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | S.A.F.E</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/components.js" defer></script>
+</head>
+
+<body>
+    <div class="blob blob-1" style="width: 600px; height: 600px; top: 10%; left: 30%;"></div>
+
+    <div class="container flex-center" style="min-height: 100vh; padding-top: var(--nav-height);">
+        <div class="glass" style="padding: 40px; width: 100%; max-width: 450px;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h2 style="font-size: 2rem;">Welcome Back</h2>
+                <p style="color: var(--text-muted);">Access your dashboard</p>
+            </div>
+
+            <form action="dashboard.html">
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; color: var(--text-muted); margin-bottom: 8px;">Email Address</label>
+                    <input type="email" value="demo@antigravity.ai" required
+                        style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.2); color: white;">
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <label style="display: block; color: var(--text-muted); margin-bottom: 8px;">Password</label>
+                    <input type="password" value="password" required
+                        style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.2); color: white;">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+            </form>
+
+            <div style="margin-top: 30px; text-align: center;">
+                <p style="color: var(--text-muted); margin-bottom: 15px;">Or continue with</p>
+                <div class="flex-center" style="gap: 20px;">
+                    <button class="glass btn-glass" style="padding: 10px 20px;">Google</button>
+                    <button class="glass btn-glass" style="padding: 10px 20px;">GitHub</button>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 30px; color: var(--text-muted);">
+                Don't have an account? <a href="#" style="color: var(--primary);">Register</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
