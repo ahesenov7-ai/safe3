@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How it Works | S.A.F.E
+    </title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/components.js" defer></script>
+    <style>
+        .step-container {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 60px;
+        }
+
+        .step-container::before {
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 0;
+            bottom: -60px;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+
+        .step-container:last-child::before {
+            display: none;
+        }
+
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background: var(--bg-dark);
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--primary);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blob blob-2" style="top: 20%; right: 20%;"></div>
+
+    <div class="container" style="padding-top: var(--nav-height);">
+        <h1 class="text-gradient" style="text-align: center; margin: 80px 0;">The AI Workflow</h1>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div class="step-container">
+                <div class="step-number">1</div>
+                <div class="glass" style="padding: 30px; margin-left: 20px;">
+                    <h3 style="color: var(--primary);">Data Ingestion</h3>
+                    <p style="margin-top: 10px; color: var(--text-muted);">
+                        The system securely connects to Open Banking APIs to fetch real-time transaction data, user
+                        consent logs, and account metadata.
+                        Data is encrypted in transit and at rest using AES-256.
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-container">
+                <div class="step-number">2</div>
+                <div class="glass" style="padding: 30px; margin-left: 20px;">
+                    <h3 style="color: var(--accent);">Deep Analysis</h3>
+                    <p style="margin-top: 10px; color: var(--text-muted);">
+                        Our Neural Network (Transformer Model) processes the data stream. It looks for behavioral
+                        patterns, anomaly spikes, and cross-references
+                        global fraud databases in under 40ms.
+                    </p>
+                </div>
+            </div>
+
+            <div class="step-container">
+                <div class="step-number">3</div>
+                <div class="glass" style="padding: 30px; margin-left: 20px;">
+                    <h3 style="color: var(--secondary);">Action & Insight</h3>
+                    <p style="margin-top: 10px; color: var(--text-muted);">
+                        Based on the risk score, the system automatically triggers actions: blocking suspicious
+                        transactions, flagging for review,
+                        or approving instantly. Insights are pushed to the dashboard.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
